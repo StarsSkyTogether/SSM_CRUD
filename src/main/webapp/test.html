@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload =function () {
+            var but = document.getElementsByTagName("button")[0];
+            but.onclick = function () {
+                var butText = but.firstChild;
+                alert(butText.nodeValue);
+
+                butText.setAttribute("button2");
+
+
+            }
+
+            var inputNode = document.getElementById("name1");
+
+            alert(inputNode.value);
+            inputNode.value="伍朝辉";
+
+
+
+            var liNode = document.getElementById("bj");
+            var liText = liNode.firstChild;
+            alert(liText.nodeValue);
+        }
+    </script>
+
+</head>
+<body>
+    <button>button1</button>
+    <br><br>
+    name:<input id="name1" value="wch" class="nameClass1">
+
+<ul id="city">
+    <li id="bj" name="Bejjing">北京</li>
+    <li>上海</li>
+    <li >广州</li>
+    <li >深圳</li>
+</ul>
+</body>
+</html>
